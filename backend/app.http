@@ -1,0 +1,28 @@
+POST http://localhost:4100/users
+Content-Type: application/json
+
+{
+    "userName": "Jorge",
+    "email": "jorge@skiff.com",
+    "password": "663473ufvb75"
+}
+
+### get all users
+
+GET http://localhost:4100/users
+Content-Type: application/json
+
+###
+PUT http://localhost:4100/users/update/709de11e-2981-4006-8fa4-930c5182a1d3
+Content-Type: application/json
+
+{
+    "userName": "Mwadia",
+    "email": "mwadia@skiff.com",
+    "password": "98765432"
+}
+
+###
+
+DELETE http://localhost:4100/users/delete/83171fba-de0b-48e1-b813-2d9479a59f9a
+Content-Type: application/json
