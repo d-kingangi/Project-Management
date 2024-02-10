@@ -2,9 +2,9 @@ POST http://localhost:4100/users
 Content-Type: application/json
 
 {
-    "userName": "Jorge",
-    "email": "jorge@skiff.com",
-    "password": "663473ufvb75"
+    "userName": "KimK",
+    "email": "kimk@skiff.com",
+    "password": "12345678"
 }
 
 ### get all users

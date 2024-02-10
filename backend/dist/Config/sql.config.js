@@ -7,11 +7,12 @@ exports.sqlConfig = void 0;
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 exports.sqlConfig = {
-    user: 'sa',
-    password: 'password123',
-    database: 'ProjectManagement',
-    server: "CALIGULA\\MSSQLSERVER1",
-    // port: 1433,
+    //enter custom server credentials
+    user: 'sa' || process.env.DB_USER,
+    password: 'password123' || process.env.DB_PWD,
+    database: 'ProjectManagement' || process.env.DB_NAME,
+    server: "CALIGULA\\MSSQLSERVER1" || process.env.SERVER,
+    port: 1433,
     pool: {
         max: 10,
         min: 0,

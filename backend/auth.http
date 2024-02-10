@@ -1,0 +1,7 @@
+POST http://localhost:4100/auth/login
+Content-Type: application/json
+
+{
+    "email": "kimk@skiff.com",
+    "password": "12345678"
+}  

@@ -1,8 +1,10 @@
 import mssql from 'mssql';
+import bcrypt from 'bcrypt';
 import { Request, Response } from "express";
 import {v4} from 'uuid'
 import {User} from "../Interfaces/user";
 import { sqlConfig } from "../Config/sql.config";
+import { registerUserSchema } from '../Validators/users.validators';
 
 // const users: User[] = []
 
@@ -10,10 +12,17 @@ export const createUser = async(req: Request, res: Response)=>{
     try{
         const id = v4()
 
-        console.log(id);
-        
-
         const {userName, email, password}:User = req.body
+
+        const hashed_pwd = await bcrypt.hash(password, 3)
+
+        let {error} = registerUserSchema.validate(req.body)
+
+        if(error){
+            return res.status(404).json({
+                error: error
+            })
+        }
 
         // const newUser = {user_id:id, userName, email, password}
 
@@ -25,7 +34,7 @@ export const createUser = async(req: Request, res: Response)=>{
         .input("user_id", mssql.VarChar, id)
         .input("userName", mssql.VarChar, userName)
         .input("email", mssql.VarChar, email)
-        .input("password", mssql.VarChar, password)
+        .input("password", mssql.VarChar, hashed_pwd)
         .execute('registerUser')).rowsAffected
 
         console.log(result)

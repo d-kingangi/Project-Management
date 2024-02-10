@@ -5,11 +5,11 @@ dotenv.config();
 
 export const sqlConfig = {
     //enter custom server credentials
-    user: '',
-    password: '',
-    database: '',
-    server: "",
-    // port: 1433,
+    user: '' || process.env.DB_USER,
+    password: '' || process.env.DB_PWD,
+    database: '' || process.env.DB_NAME,
+    server: "" ||process.env.SERVER,
+    port: 1433,
 
     pool:{
         max: 10,

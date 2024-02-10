@@ -14,14 +14,22 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteUser = exports.updateUser = exports.getOneUser = exports.getUsers = exports.createUser = void 0;
 const mssql_1 = __importDefault(require("mssql"));
+const bcrypt_1 = __importDefault(require("bcrypt"));
 const uuid_1 = require("uuid");
 const sql_config_1 = require("../Config/sql.config");
+const users_validators_1 = require("../Validators/users.validators");
 // const users: User[] = []
 const createUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const id = (0, uuid_1.v4)();
-        console.log(id);
         const { userName, email, password } = req.body;
+        const hashed_pwd = yield bcrypt_1.default.hash(password, 3);
+        let { error } = users_validators_1.registerUserSchema.validate(req.body);
+        if (error) {
+            return res.status(404).json({
+                error: error
+            });
+        }
         // const newUser = {user_id:id, userName, email, password}
         // users.push(newUser)
         const pool = yield mssql_1.default.connect(sql_config_1.sqlConfig);
@@ -29,7 +37,7 @@ const createUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
             .input("user_id", mssql_1.default.VarChar, id)
             .input("userName", mssql_1.default.VarChar, userName)
             .input("email", mssql_1.default.VarChar, email)
-            .input("password", mssql_1.default.VarChar, password)
+            .input("password", mssql_1.default.VarChar, hashed_pwd)
             .execute('registerUser')).rowsAffected;
         console.log(result);
         // newUser = {user_id:id, userName, email, password};
