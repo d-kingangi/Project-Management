@@ -7,37 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="parentDiv">
-        <div class="welcome">
-            <div class="newProject">
-                <h3>Create Project</h3>
-                <form class="Sign-Up">
-                    <div class="titleDiv">
-                        <label for="title">Title</label>
-                        <input type="text" name="title" id="title" placeholder="Project Title">
-                        <br>
-                    </div>  
-                    <div class="descDiv">
-                        <label for="description">Description</label>
-                        <input type="text" name="description" id="description" placeholder="Description">
-                    </div>
-                    <div class="userDiv">
-                        <label for="user">User</label>                        
-                        <input type="text" name="user" id="user" placeholder="Assign User">
-                        <br>
-                    </div> 
-                    <div class="dateDiv">
-                        <label for="date">End Date</label>
-                        <input type="date" name="date" id="date" placeholder="Start Date">
-                    </div>
-                    <div class="createBtn">
-                        <input type="submit" value="Create" id="create">
-                    </div>
-                </form>
+    <div class="newProjectContainer">
+        <div class="newProject">
+            <div class="navAdmin">
+                <a href="./admin-dashboard.html"><ion-icon name="arrow-back-circle-outline" id = "adminBackArrow"></ion-icon></a>
+                <h2>Tell us about your project</h2>
             </div>
+            <form class="createProject">
+                    <label for="title">Add a project title:</label>
+                    <br>
+                    <input type="text" name="title" id="title" placeholder="Project Title" required>
+                    <br>
+                    <label for="description">What is the project about?</label>
+                    <br>
+                    <textarea name="description" id="description" cols="30" rows="5" placeholder="Describe your project"></textarea>  
+                    <br>                  
+                    <label for="end">Add a due date:</label>    
+                    <br>
+                    <input type="date" id="end" name="endDate" value="2024-02-07" min="2024-03-01" max="2029-12-31" />
+                    <br>
+                    <input type="submit" value="Next" id="create">
+            </form>
         </div>
+    </div>
+
+    <div class="output">
 
     </div>
-    <script src="../dist/main.js"></script>
+
+    <script src="../dist/newProject.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

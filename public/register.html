@@ -7,37 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="parentDiv">
-        <div class="welcome">
-            <div class="newUser">
-                <h3>Register</h3>
-                <form class="Sign-Up">
-                    <div class="uName">
-                        <label for="userName">Username</label>
-                        <input type="text" name="Username" id="userName" placeholder="Enter Your Name">
+    <div class="registerContainer">
+        <div class="newUser">
+            <div class="top">
+                <div class="logo">PMS Projects</div>
+                <div class="navLogin">
+                    <a href="./landing.html">Already have an account?<span id="loginLink">Login</span></a>
+                </div>
+            </div>
+            <div class="bottom">
+                <h2>Let's get started by <br>creating your free <br> PMS account</h2>
+                <form class="signUp">
+                    <div class="fName">
+                        <label for="fName">First Name</label>
+                        <br>
+                        <input type="text" name="fName" id="fName" placeholder="Enter Your First Name">
+                        <br>
+                    </div>  
+                    <div class="lName">
+                        <label for="lName">Last Name</label>
+                        <br>
+                        <input type="text" name="lName" id="lName" placeholder="Enter Your Last Name">
                         <br>
                     </div>  
                     <div class="emailDiv">
                         <label for="email">Email</label>
+                        <br>
                         <input type="email" name="email" id="email" placeholder="Email address">
                     </div>
                     <div class="pd">
                         <label for="pwd">Password</label>
+                        <br>
                         <input type="password" name="Password" id="pwd" placeholder="Password">
                         <br>
                     </div> 
-                    <div class="confirmPwd">
-                        <label for="confirm">Confirm Password</label>
-                        <input type="password" name="confirm" id="confirm" placeholder="Confirm Password">
-                    </div>
                     <div class="createUserDiv">
+                        <p id="terms">By signing up, I agree to the Terms of Use and Privacy Policy</p>
                         <input type="submit" value="Register" id="createUser">
                     </div>
                 </form>
+
             </div>
+
         </div>
 
     </div>
-    <script src="../dist/main.js"></script>
+    <script src="../dist/register.js"></script>
 </body>
 </html>

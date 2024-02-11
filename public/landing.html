@@ -8,32 +8,35 @@
 </head>
 <body>
     <div class="parentDiv">
-        <div class="welcome">
-            <div class="track">
-                <h2>Track teams, projects and tasks.</h2>
-            </div>
-            <div class="loginForm">
-                <h3>Sign-In</h3>
-                <form class="login">
-                    <div class="uName">
-                        <label for="userName">Username</label>
-                        <input type="text" name="Username" id="userName" placeholder="Enter Your name">
-                        <br>
-                    </div>  
-                    <div class="pd">
-                        <label for="pwd">Password</label>
-                        <input type="password" name="Password" id="pwd" placeholder="Pasword">
-                        <br>
-                    </div> 
-                    <div class="loginBtn">
-                        <input type="submit" value="Login" id="signIn">
-                    </div>
-                </form>
-                <div class="registerBtn">
-                    <a href="./register.html"><button id="register">Register</button></a>
+        <div class="loginForm">
+            <div class="logo"><h3>PMS projects</h3></div>
+            <form class="login">
+                <h3>Sign in</h3>
+                <div class="uName">
+                    <div class="errorDiv"></div>
+                    <label for="userName">Email</label>
+                    <br>
+                    <input type="email" name="Username" id="userName" placeholder="Enter Your email" required>
+                    <br>
+                </div>  
+                <div class="pd">
+                    <div class="errorDiv"></div>
+                    <label for="loginPwd">Password</label>
+                    <br>
+                    <input type="password" name="Password" id="loginPwd" placeholder="Pasword" required>
+                    <br>
+                    <a href="./login.html" id="forgot">Forgot password?</a>
+                    <br>
+                </div> 
+                <div class="loginBtn">
+                    <input type="submit" value="Login" id="signIn">
+                    <br>
+                    <a href="./register.html">Don't have an account? <span id="registerLink">Register</span></a>
                 </div>
-                <a id="forgot">Forgot password</a>
-            </div>
+            </form>
+        </div>
+        <div class="welcome"> 
+            <img src="https://cdn.pixabay.com/photo/2016/06/14/08/47/woman-1455991_640.png" alt="">
         </div>
 
     </div>
