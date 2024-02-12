@@ -113,6 +113,27 @@ input{
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width:428px) {
+  
+.parentDiv{
+  width: 100vw;
+  flex-direction: column;
+}
+
+.loginForm{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.welcome{
+  width: 100%;
+}
+
+
+}
+
+
+
 
 
 /******************************************************************************************************************************************
@@ -208,6 +229,22 @@ input{
 #terms{
   text-align: center;
 }
+
+@media only screen and (max-width:428px) {
+  
+.registerContainer{
+  width: 100vw;
+align-items: start;
+}
+
+.newUser{
+  width: 100%;
+}
+  
+   
+   }
+
+
 
 
 
@@ -370,9 +407,34 @@ input{
   width: 40%;
 }
 
+@media only screen and (max-width:428px) {
+  .assignProject{
+    width: 100vw;
+  }
+
+  .members{
+    width: 90%;
+  }
+ .members h3{
+  width: 100%;
+ }
+
+ .membersList{
+  width: 100%;
+ }
+
+ #saveMember{
+  width: 100%;
+ }
+
+.navProjectForm{
+  width: 100%;
+}
 
 
 
+  
+  }
 
 
 
@@ -555,6 +617,45 @@ height: 0px;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 0;
+}
+
+@media only screen and (max-width:428px) {
+.userNavLink{
+  display: none;
+}
+
+.userTop h3{
+  display: none;
+}
+
+.profile{
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.profile img{
+  width: 60px;
+}
+
+
+.userDisplay{
+  flex-direction: column;
+}
+
+.userDisplay h3{
+  font-size: 20px;
+}
+
+.userDisplay{
+  font-size: 15px;
+  position: absolute;
+}
+
+
+
+
+
+
 }
 
 
@@ -760,6 +861,36 @@ ion-icon {
 .backToProjects:hover{
   background-color: #74bfe7;
 }
+
+@media only screen and (max-width:428px) {
+  .adminSidebar{
+    display: none;
+  }
+  
+#newProject{
+  width: 70%;
+}
+
+.adminTop{
+  width: 80vw;
+  gap: 40px;
+
+}
+
+.addProjectBtn{
+  width: 60vw;
+}
+
+.adminDisplay hr{
+  width: 97vw;
+}
+  
+  
+  
+  
+  
+  
+  }
 
 
 /* Users style */
