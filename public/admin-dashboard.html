@@ -11,7 +11,7 @@
 <body>
     <div class="main">
         <div class="adminSidebar">
-            <div class="logo"><h3>PMS projects</h3></div>
+            <div class="logo"><h3>PMSP projects</h3></div>
             <div class="sidebarNav">
                 <button><ion-icon name="home-outline"></ion-icon>Dashboard</button>
                 <button><ion-icon name="people-outline"></ion-icon>Team</button>
@@ -21,19 +21,25 @@
                 <button><ion-icon name="documents-outline"></ion-icon>All Porjects</button>
                 <button><ion-icon name="chatbubbles-outline"></ion-icon>Messages</button>
             </div>
+            <div class="logoutAdmin">
+                <a href="./landing.html"><button>Log Out</button></a> 
+            </div>
         </div>
         <div class="adminDisplay">
             <div class="adminTop">
                 <h2>Dashboard</h2>
-                <button id="newProject">New Project</button>
+                <div class="addProjectBtn">
+                    <a href="./projectForm.html"><button id="newProject">New Project</button> </a>
+                </div>
             </div>
             <hr>
             <div class="adminContent">
-                <p>No projects to show at the moment. Create a new project to view</p>
+                <p id = 'noProjects'>No projects to show at the moment. Create a new project to view</p>
             </div>
         </div>
 
     </div>
-    
+<script src="../dist/adminDisplay.js"></script>
+<script src="../dist/newProject.js"></script>
 </body>
 </html>

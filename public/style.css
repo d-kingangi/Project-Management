@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border:  1px solid blue;
+  /* border:  1px solid blue; */
   height: 100vh;
   background-color: #eaedf1;
 }
@@ -103,6 +103,14 @@ input{
 
 #forgot{
   font-size: 16px;
+}
+
+.errorDiv{
+  margin-bottom: 20px;
+}
+
+.pwdErrorDiv{
+  margin-bottom: 20px;
 }
 
 
@@ -217,7 +225,7 @@ input{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #eaedf1;
+  background-color:rgba(255, 255, 255, 0)
 }
 
 .navAdmin{
@@ -294,6 +302,7 @@ input{
   justify-content: center;
   align-items: center;
   height: 40vh;
+  background-color: transparent;
   /* border: 1px solid blue; */
 
 }
@@ -302,6 +311,7 @@ input{
   margin-bottom: 20px;
   /* border: 1px solid blue; */
   width: 50%;
+  
 }
 
 .members{
@@ -320,6 +330,10 @@ input{
 
 }
 
+#saveMember:hover{
+  background-color: #eaedf1;
+}
+
 #chooseMember{
   font-size: 15px;
   color: #a3a1a1;
@@ -331,6 +345,30 @@ input{
   font-size: 15px;
 }
 
+#skip:hover{
+  color: #8f9194;
+}
+
+.toAssign{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 43%;
+  height: 40px;
+  text-align: center;
+  background-color:#eaedf1;
+  border: none;
+}
+
+#toProjectForm{
+  color: #38ACEC;
+  font-size: 15px;
+}
+
+.navProjectForm{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
 
 
 
@@ -540,7 +578,7 @@ height: 0px;
   display: flex;
   flex-direction: column;
   gap: 60px;
-  height: 100%;  
+  height: 150vh;  
   width: 15%;
   padding-left: 20px;
   padding-top: 40px;
@@ -562,12 +600,34 @@ height: 0px;
 .adminContent{
   padding-left: 20px;
   margin-top: 20px;
+  height: 120vh;
+}
+
+.logoutAdmin button{
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+  color: #38ACEC;
 }
 
 .sidebarNav{
   display: flex;
   flex-direction: column;
   /* gap: 30px; */
+}
+
+.logoutAdmin button:hover{
+  background-color: #38ACEC;
+  border: 1px solid rgba(145, 141, 141, 0.4);  
+  margin-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  color: #4b4646;
 }
 
 .sidebarNav button{
@@ -586,6 +646,9 @@ height: 0px;
 .sidebarNav > button:hover{
   background-color: #38ACEC;
   border: 1px solid rgba(145, 141, 141, 0.4);  
+  margin-right: 20px;
+  padding-left: 0;
+  border-radius: 5px;
 }
 
 .adminTop{
@@ -594,7 +657,19 @@ height: 0px;
   justify-content: space-between;
   padding-left: 20px;
   padding-top: 40px;
+  padding-bottom: 30px;
 }
+
+.adminTop h2{
+  font-size: 30px;
+}
+
+.addProjectBtn{
+  /* border: 1px solid blue; */
+  width: 12%;
+}
+
+
 
 
 
@@ -607,13 +682,83 @@ ion-icon {
 #newProject{
   background-color: #38ACEC;
   border: none;
-  width: 10%;
+  width: 100%;
   height: 30px;
   border-radius: 5px;
 }
 
 #newProject:hover{
   background-color: #eaedf1;
+}
+
+.projectDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  border: 1px solid rgba(145, 141, 141, 0.4);
+  border-radius: 20px;
+  width: 20%;
+  height: 20%;
+  padding: 20px;
+  min-height: 150px;
+}
+
+/* .projectDiv:hover{
+  background-color: #74bfe7;
+} */
+
+.newTitle{
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  width: 100%;
+}
+
+.viewBtn{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #74bfe7;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.viewBtn:hover{
+  background-color:#eaedf1;
+
+}
+
+.deleteBtn{
+  background-color: #eaedf1;
+  width: 20%;
+  border: none;
+  /* border-radius: 5px; */
+}
+
+.deleteBtn:hover{
+  background-color: #74bfe7;
+}
+
+.crudDiv{
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content:flex-end;
+}
+
+.backToProjects{
+  width: 20%;
+  border: none;
+  border-radius: 3px;
+}
+
+.backToProjects:hover{
+  background-color: #74bfe7;
 }
 
 
