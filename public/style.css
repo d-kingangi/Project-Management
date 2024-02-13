@@ -118,6 +118,7 @@ input{
 .parentDiv{
   width: 100vw;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .loginForm{
@@ -126,7 +127,7 @@ input{
 }
 
 .welcome{
-  width: 100%;
+display: none;
 }
 
 
@@ -325,6 +326,55 @@ align-items: start;
   #create:hover{
     background-color: #dbdbdb;
   }
+
+  .logoutAdminMobile{
+    display: none;
+  }
+
+  @media only screen and (max-width:428px) {
+ .navAdmin{
+  width: 100vw;
+ } 
+  
+ .newProject{
+  border: none;
+ }
+
+ .newProject{
+  justify-content: flex-start;
+ }
+
+ .newProjectContainer{
+  justify-content: flex-start;
+
+ }
+
+ .logoutAdminMobile{
+  display: block;
+ }
+
+ #logoutMobile{
+  border: none;
+  background-color: transparent;
+  width: 60%;
+
+ }
+
+ .adminTop{
+  width: 100vw;
+ }
+
+ .adminTop h2{
+  display: none;
+ }
+
+ #newProject{
+  width: 20%;
+ }
+    
+  }
+
+  
 
 
   /***************************************************************************************************************************************
