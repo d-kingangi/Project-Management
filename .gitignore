@@ -1,6 +1,8 @@
-/Frontend
+/Frontend/dist
 /backend/.env
 /backend/node_modules
-/bgservices
-
+/backend/dist
+/bgservices/dist
+/bgservices/.env
+/bgservices/node_modules
 

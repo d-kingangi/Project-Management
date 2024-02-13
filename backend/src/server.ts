@@ -1,13 +1,17 @@
 import express, {NextFunction, Request, Response, json} from 'express'
+import cors from 'cors';
 import userRouter from './Routes/user.router'
 import auth_router from './Routes/auth.router'
+import projectRouter from './Routes/project.router';
 
-const app = express()
-
-app.use(json())
+const app = express();
+app.use(cors());
+app.use(json());
 
 app.use('/users', userRouter)
 app.use('/auth', auth_router)
+app.use('/projects', projectRouter)
+
 app.use((error: Error, req: Request, res: Response, next: NextFunction)=>{
     res.json({
         message: error.message

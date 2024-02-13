@@ -1,7 +1,7 @@
 import mssql from 'mssql';
 import bcrypt from 'bcrypt';
 import { Request, Response } from "express";
-import {v4} from 'uuid'
+import {v4} from 'uuid';
 import {User} from "../Interfaces/user";
 import { sqlConfig } from "../Config/sql.config";
 import { registerUserSchema } from '../Validators/users.validators';

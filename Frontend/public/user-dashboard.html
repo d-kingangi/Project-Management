@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="userContainer">
+        <div class="userNavLink">
+            <div class="logo"><h3 id="userLogo">PMS projects</h3></div>
+            <div class="sidebarNav">
+                <button><ion-icon name="home-outline"></ion-icon>User Dashboard</button>
+                <button><ion-icon name="people-outline"></ion-icon>Team</button>
+                <button><ion-icon name="checkmark-done-circle-outline"></ion-icon>Completed Projects</button>
+                <button><ion-icon name="documents-outline"></ion-icon>Active Projects</button>
+                <button><ion-icon name="alert-outline"></ion-icon>Urgent Projects</button>
+                <button><ion-icon name="documents-outline"></ion-icon>All Porjects</button>
+                <button><ion-icon name="chatbubbles-outline"></ion-icon>Messages</button>
+            </div>
+        </div>
+        <div class="userContent">
+            <div class="userTop">
+                <h3>Dashboard</h3>
+                <div class="profile">
+                    <a id="logout">Logout</a>
+                    <img src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="userBody">
+                <div class="userDisplay">
+                    <div class="left">
+                        <h3>Hello, </h3>
+                        <br>
+                        <p>You currently have no active projects</p>
+                        <div class="activeProjects">
+                            <p class="howMany">Active Projects</p>
+                            <hr>
+                            <div class="projectsAssigned">
+                                <p id="assignedTotal">0</p>
+                                <br>
+                                <p>In Total</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <h3>Completed projects</h3>
+                        <br>
+                        <p>You  have not completed any projects yet</p>
+                        <div class="activeProjects">
+                            <p class="howMany">Completed projects</p>
+                            <hr>
+                            <div class="projectsAssigned">
+                                <p id="assignedTotal">0</p>
+                                <br>
+                                <p>In Total</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right" style="display: none;">
+                        <h3>Your messages</h3>
+                        <br>
+                        <p>You currently don't have any messages</p>
+                        <div class="activeProjects">
+                            <p class="howMany">Mesages</p>
+                            <hr>
+                            <div class="projectsAssigned">
+                                <p id="assignedTotal">0</p>
+                                <br>
+                                <p>In Total</p>
+                            </div>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" alt="">
+                        <p>email@example.com</p>                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../dist/user-Dashboard.js"></script>
+</body>
+</html>

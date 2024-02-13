@@ -1,0 +1,8 @@
+POST http://localhost:4100/projects
+Content-Type: application/json
+
+{
+    "title": "Carnival",
+    "descr": "Rides",
+    "end_date": "23-14-2024"
+}

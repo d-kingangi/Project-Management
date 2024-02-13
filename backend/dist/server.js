@@ -27,12 +27,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importStar(require("express"));
+const cors_1 = __importDefault(require("cors"));
 const user_router_1 = __importDefault(require("./Routes/user.router"));
 const auth_router_1 = __importDefault(require("./Routes/auth.router"));
+const project_router_1 = __importDefault(require("./Routes/project.router"));
 const app = (0, express_1.default)();
+app.use((0, cors_1.default)());
 app.use((0, express_1.json)());
 app.use('/users', user_router_1.default);
 app.use('/auth', auth_router_1.default);
+app.use('/projects', project_router_1.default);
 app.use((error, req, res, next) => {
     res.json({
         message: error.message

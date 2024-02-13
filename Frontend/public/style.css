@@ -1,0 +1,950 @@
+*{
+  padding: 0%;
+  margin: 0%;  
+  font-family: sans-serif;
+}
+
+/****************************************************************************************************************************************
+
+                                                  *LANDING PAGE STYLE*
+
+*****************************************************************************************************************************************/
+
+.parentDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border:  1px solid blue; */
+  height: 100vh;
+  background-color: #eaedf1;
+}
+
+.logo{
+  text-align: left;
+  /* border:  1px solid blue; */
+  width: 94%;
+  color: #38ACEC;
+}
+
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* border:  1px solid blue; */
+  height: 70%;
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.welcome{
+  width: 30%;
+    /* border:  1px solid blue; */
+  height: 70%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.welcome img{
+  width: 84%;
+  height: auto;
+  padding-top: 10px;
+}
+
+.login{
+  /* border:  1px solid blue; */
+  height: 90%;
+  width: 90%;
+}
+
+.login input{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 90%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgba(145, 141, 141, 0.4);
+}
+
+.login h3{
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: gray;
+}
+
+#signIn{
+  margin-top: 20px;
+  background-color: #38ACEC;
+  height: 40px;
+  width: 95%;
+}
+
+#signIn:hover{
+  background-color: #dbdbdb;
+}
+
+input{
+  padding: 10px;
+}
+
+#registerLink{
+  color: #38ACEC;
+}
+#registerLink:hover{
+  color:#4b4646
+}
+
+#forgot{
+  font-size: 16px;
+}
+
+.errorDiv{
+  margin-bottom: 20px;
+}
+
+.pwdErrorDiv{
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width:428px) {
+  
+.parentDiv{
+  width: 100vw;
+  flex-direction: column;
+}
+
+.loginForm{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.welcome{
+  width: 100%;
+}
+
+
+}
+
+
+
+
+
+/******************************************************************************************************************************************
+
+                                                                    *REGISTER PAGE STYLE*
+
+*******************************************************************************************************************************************/
+.registerContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:  1px solid blue;
+  height: 120vh;
+  background-color: #eaedf1;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  /* border: 1px solid blue; */
+
+}
+
+.navLogin{
+  display: flex;
+  /* border: 1px solid blue; */
+  width: 50%;
+}
+
+.newUser{
+  width: 60%;
+  height: 90%;
+  /* border: 1px solid blue; */
+  background-color: white;
+}
+
+.newUser h2{
+  width: 70%;
+  /* font-weight:lighter; */
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* border: 1px solid blue; */
+
+}
+
+#loginLink{
+  color: #38ACEC;
+}
+
+#loginLink:hover{
+  color:#4b4646
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid blue; */
+  height: 85%;
+}
+
+.signUp{
+  /* border: 1px solid blue; */
+  width: 80%;
+  height: 90%;
+}
+
+.signUp input{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 90%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgba(145, 141, 141, 0.4);
+}
+
+#createUser{
+  margin-top: 20px;
+  background-color: #38ACEC;
+  height: 40px;
+  width: 93%;
+}
+
+#createUser:hover{
+  background-color: #dbdbdb;
+}
+
+#terms{
+  text-align: center;
+}
+
+@media only screen and (max-width:428px) {
+  
+.registerContainer{
+  width: 100vw;
+align-items: start;
+}
+
+.newUser{
+  width: 100%;
+}
+  
+   
+   }
+
+
+
+
+
+
+/******************************************************************************************************************************************
+
+                                                      *NEW PROJECT FORM*
+
+*******************************************************************************************************************************************/
+
+
+.newProjectContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgba(255, 255, 255, 0)
+}
+
+.navAdmin{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 28px;
+  /* border: 1px solid blue; */
+}
+
+#adminBackArrow{
+  font-size: 30px;
+  padding-left: 20px;
+  color: #a3a1a1;
+}
+
+
+.newProject{
+    border: 1px solid rgba(145, 141, 141, 0.4);
+    border-radius: 20px;
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .newProject h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+    /* width: 50%; */
+  }
+
+  .createProject input, textarea{
+    margin-top: 10px;
+    margin-bottom: 20px;   
+    border-radius: 5px;
+    border: 1px solid rgba(145, 141, 141, 0.4);
+ 
+  }
+
+  .createProject input{
+    width: 94%;
+    height: 25px;
+  }
+
+  textarea{
+    padding: 10px;
+  }
+
+  #create{
+    width: 100%;
+    background-color: #38ACEC;
+    height: 40px;
+  }
+
+  #create:hover{
+    background-color: #dbdbdb;
+  }
+
+
+  .logoutAdminMobile{
+    display: none;
+  }
+
+  @media only screen and (max-width:428px) {
+ .navAdmin{
+  width: 100vw;
+ } 
+
+ .newProject{
+  border: none;
+ }
+
+ .newProject{
+  justify-content: flex-start;
+ }
+
+ .newProjectContainer{
+  justify-content: flex-start;
+
+ }
+
+ .logoutAdminMobile{
+  display: block;
+ }
+
+ #logoutMobile{
+  border: none;
+  background-color: transparent;
+  width: 60%;
+
+ }
+
+ .adminTop{
+  width: 100vw;
+ }
+
+ .adminTop h2{
+  display: none;
+ }
+
+ #newProject{
+  width: 20%;
+ }
+
+  }
+
+  /***************************************************************************************************************************************
+
+                                            *ASSIGN PROJECT FORM*
+
+  ***************************************************************************************************************************************/
+
+.assignProject{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: transparent;
+  /* border: 1px solid blue; */
+
+}
+
+.assignProject h3{
+  margin-bottom: 20px;
+  /* border: 1px solid blue; */
+  width: 50%;
+  
+}
+
+.members{
+  border: 1px solid rgba(145, 141, 141, 0.4);
+  width: 50%;
+  padding: 20px;
+}
+
+#saveMember{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 43%;
+  background-color: #38ACEC;
+  height: 40px;
+  /* border: 1px solid blue; */
+
+}
+
+#saveMember:hover{
+  background-color: #eaedf1;
+}
+
+#chooseMember{
+  font-size: 15px;
+  color: #a3a1a1;
+}
+
+
+#skip{
+  color: #38ACEC;
+  font-size: 15px;
+}
+
+#skip:hover{
+  color: #8f9194;
+}
+
+.toAssign{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 43%;
+  height: 40px;
+  text-align: center;
+  background-color:#eaedf1;
+  border: none;
+}
+
+#toProjectForm{
+  color: #38ACEC;
+  font-size: 15px;
+}
+
+.navProjectForm{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+@media only screen and (max-width:428px) {
+  .assignProject{
+    width: 100vw;
+  }
+
+  .members{
+    width: 90%;
+  }
+ .members h3{
+  width: 100%;
+ }
+
+ .membersList{
+  width: 100%;
+ }
+
+ #saveMember{
+  width: 100%;
+ }
+
+.navProjectForm{
+  width: 100%;
+}
+
+
+
+  
+  }
+
+
+
+
+
+
+
+/***************************************************************************************************************************************
+
+                                                                    *USER STYLE DASHBOARD*
+
+****************************************************************************************************************************************/
+.userContainer{
+  display: flex;
+  height: 100vh;
+  background-color: #eaedf1;
+  
+}
+.userNavLink{
+  width: 15%;
+  padding-left: 20px;
+  /* background-color: white; */
+  padding-top: 40px;
+}
+
+#userLogo{
+  font-size: 20px;
+}
+
+.userContainer h3{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.userTop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding-top: 40px;
+  /* border: 1px solid blue; */
+  padding-left: 20px;
+}
+
+.userContent{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: white;
+}
+
+
+
+.userContent hr
+{
+border-bottom:1px solid rgb(255, 255, 255);
+width: 92%;
+height: 0px;
+}
+
+
+.profile{
+  /* border: 1px solid blue; */
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.profile img{
+  border-radius: 50%;
+  width: 30px;
+}
+
+.userBody{
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  /* background-color: white; */
+  /* border: 1px solid blue; */
+}
+
+#logout{
+  color: #38ACEC;
+}
+
+.userDisplay{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  position: relative;
+  top: 10vh;
+  /* border: 1px solid blue; */
+  width: 90%;
+
+  /* background-color: white; */
+}
+
+
+.right{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 1px solid rgba(145, 141, 141, 0.4);
+  background-color: white;
+  padding-bottom: 30px;
+  /* border: 1px solid blueviolet; */
+}
+
+.middle{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.left{
+  flex: 1;
+  padding-left: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  padding-bottom: 30px;
+
+}
+
+.right img{
+  width: 30%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.right h3{
+  margin-bottom: 20px;
+}
+
+.activeProjects{
+  margin-top: 30px;
+  border: 1px solid rgba(145, 141, 141, 0.4);
+  border-radius: 20px;
+  width: 70%;
+  height: 30%;
+  padding: 20px;
+  min-height: 150px;
+  /* background-color: #eaedf1;   */
+}
+
+.activeProjects:hover{
+  background-color: #74bfe7;
+}
+
+.activeProjects p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.howMany{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#assignedTotal{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width:428px) {
+.userNavLink{
+  display: none;
+}
+
+.userTop h3{
+  display: none;
+}
+
+.profile{
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.profile img{
+  width: 60px;
+}
+
+
+.userDisplay{
+  flex-direction: column;
+}
+
+.userDisplay h3{
+  font-size: 20px;
+}
+
+.userDisplay{
+  font-size: 15px;
+  position: absolute;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+/*****************************************************************************************************************************************
+
+                                              *ADMIN DASHBOARD*
+
+*********************************************************************************************************************************************/
+.main{
+  display: flex;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  width: 98vw;
+  height: 100vh;
+}
+.adminSidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  height: 150vh;  
+  width: 15%;
+  padding-left: 20px;
+  padding-top: 40px;
+  background-color: #eaedf1;
+}
+
+.adminDisplay hr{
+  border-bottom:1px solid rgb(255, 255, 255);
+  width: 86%;
+  height: 0px;
+}
+
+.adminDisplay{
+  width: 85%;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+
+.adminContent{
+  padding-left: 20px;
+  margin-top: 20px;
+  height: 120vh;
+}
+
+.logoutAdmin button{
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+  color: #38ACEC;
+}
+
+.sidebarNav{
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
+}
+
+.logoutAdmin button:hover{
+  background-color: #38ACEC;
+  border: 1px solid rgba(145, 141, 141, 0.4);  
+  margin-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  color: #4b4646;
+}
+
+.sidebarNav button{
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+  gap: 10px;
+  /* color: #38ACEC; */
+}
+
+.sidebarNav > button:hover{
+  background-color: #38ACEC;
+  border: 1px solid rgba(145, 141, 141, 0.4);  
+  margin-right: 20px;
+  padding-left: 0;
+  border-radius: 5px;
+}
+
+.adminTop{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.adminTop h2{
+  font-size: 30px;
+}
+
+.addProjectBtn{
+  /* border: 1px solid blue; */
+  width: 12%;
+}
+
+
+
+
+
+
+ion-icon {
+  font-size: 25px;
+  color: #38ACEC;
+}
+
+#newProject{
+  background-color: #38ACEC;
+  border: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#newProject:hover{
+  background-color: #eaedf1;
+}
+
+.projectDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  border: 1px solid rgba(145, 141, 141, 0.4);
+  border-radius: 20px;
+  width: 20%;
+  height: 20%;
+  padding: 20px;
+  min-height: 150px;
+}
+
+/* .projectDiv:hover{
+  background-color: #74bfe7;
+} */
+
+.newTitle{
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  width: 100%;
+}
+
+.viewBtn{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #74bfe7;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.viewBtn:hover{
+  background-color:#eaedf1;
+
+}
+
+.deleteBtn{
+  background-color: #eaedf1;
+  width: 20%;
+  border: none;
+  /* border-radius: 5px; */
+}
+
+.deleteBtn:hover{
+  background-color: #74bfe7;
+}
+
+.crudDiv{
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content:flex-end;
+}
+
+.backToProjects{
+  width: 20%;
+  border: none;
+  border-radius: 3px;
+}
+
+.backToProjects:hover{
+  background-color: #74bfe7;
+}
+
+@media only screen and (max-width:428px) {
+  .adminSidebar{
+    display: none;
+  }
+  
+#newProject{
+  width: 70%;
+}
+
+.adminTop{
+  width: 80vw;
+  gap: 40px;
+
+}
+
+.addProjectBtn{
+  width: 60vw;
+}
+
+.adminDisplay hr{
+  width: 97vw;
+}
+  
+  
+  
+  
+  
+  
+  }
+
+
+/* Users style */
+
+
+
+
+
+
+/* projects page */

@@ -2,6 +2,38 @@ POST http://localhost:4100/auth/login
 Content-Type: application/json
 
 {
-    "email": "kimk@skiff.com",
+    "email": "kingangiduncan47@gmail.com",
     "password": "12345678"
 }  
+
+####
+PUT http://localhost:4100/auth/reset_pwd
+Content-Type: application/json
+
+{
+    "email": "",
+    "password": ""
+}
+
+####
+POST http://localhost:4100/auth/checkdetails
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzhhNjAwY2QtMjkyNy00YjU5LTkzNzAtOTU4YWYzZjkzYWE1IiwidXNlck5hbWUiOiJLaW1LIiwiZW1haWwiOiJraW1rQHNraWZmLmNvbSIsImlzV2VsY29tZWQiOmZhbHNlLCJpYXQiOjE3MDc2MzY2NjUsImV4cCI6MTcwNzY0MDI2NX0.hy4UToh_KJCI7DKFcjNkW-Sos0FEAj6BxefBiKT4lws
+
+### get all users
+
+GET http://localhost:4100/users
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOGNhZDg1MzQtMTcyYi00OGU0LWEzZGUtNmExOGNlMWI3ZjEyIiwidXNlck5hbWUiOiJEdW5jYW4gSyIsImVtYWlsIjoia2luZ2FuZ2lkdW5jYW40N0BnbWFpbC5jb20iLCJpc1dlbGNvbWVkIjpmYWxzZSwiaXNBZG1pbiI6dHJ1ZSwicHJvamVjdF9hc3NpZ25lZCI6bnVsbCwiaWF0IjoxNzA3ODI3NjkyLCJleHAiOjE3MDc4MzEyOTJ9.oA9L61BmTbDHNH0Uu9jMvVC8OG5_RYerNnvH7pt5hGA
+### get all users
+
+GET http://localhost:4100/projects
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOGNhZDg1MzQtMTcyYi00OGU0LWEzZGUtNmExOGNlMWI3ZjEyIiwidXNlck5hbWUiOiJEdW5jYW4gSyIsImVtYWlsIjoia2luZ2FuZ2lkdW5jYW40N0BnbWFpbC5jb20iLCJpc1dlbGNvbWVkIjpmYWxzZSwiaXNBZG1pbiI6dHJ1ZSwicHJvamVjdF9hc3NpZ25lZCI6bnVsbCwiaWF0IjoxNzA3ODI3NjkyLCJleHAiOjE3MDc4MzEyOTJ9.oA9L61BmTbDHNH0Uu9jMvVC8OG5_RYerNnvH7pt5hGA
+
+
+### delete project
+
+DELETE http://localhost:4100/projects/delete/5a333ffd-db48-4e51-b5d2-0b2011d06f69
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOGNhZDg1MzQtMTcyYi00OGU0LWEzZGUtNmExOGNlMWI3ZjEyIiwidXNlck5hbWUiOiJEdW5jYW4gSyIsImVtYWlsIjoia2luZ2FuZ2lkdW5jYW40N0BnbWFpbC5jb20iLCJpc1dlbGNvbWVkIjpmYWxzZSwiaXNBZG1pbiI6dHJ1ZSwicHJvamVjdF9hc3NpZ25lZCI6bnVsbCwiaWF0IjoxNzA3ODI3NjkyLCJleHAiOjE3MDc4MzEyOTJ9.oA9L61BmTbDHNH0Uu9jMvVC8OG5_RYerNnvH7pt5hGA

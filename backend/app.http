@@ -1,9 +1,9 @@
-POST http://localhost:4100/users
+POST http://localhost:4100/localhost:4100/users
 Content-Type: application/json
 
 {
-    "userName": "KimK",
-    "email": "kimk@skiff.com",
+    "userName": "Duncan K",
+    "email": "kingangiduncan47@gmail.com",
     "password": "12345678"
 }
 
@@ -11,6 +11,7 @@ Content-Type: application/json
 
 GET http://localhost:4100/users
 Content-Type: application/json
+token: 
 
 ###
 PUT http://localhost:4100/users/update/709de11e-2981-4006-8fa4-930c5182a1d3
@@ -24,5 +25,11 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:4100/users/delete/83171fba-de0b-48e1-b813-2d9479a59f9a
+DELETE http://localhost:4100/projects/delete/83171fba-de0b-48e1-b813-2d9479a59f9a
+Content-Type: application/json
+token: 
+
+### get all projects
+
+GET http://localhost:4100/projects
 Content-Type: application/json

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="adminSidebar">
+            <div class="logo"><h3>PMS projects</h3></div>
+            <div class="sidebarNav">
+                <button><ion-icon name="home-outline"></ion-icon>Admin Dashboard</button>
+                <button><ion-icon name="people-outline"></ion-icon>Team</button>
+                <button><ion-icon name="checkmark-done-circle-outline"></ion-icon>Completed Projects</button>
+                <button><ion-icon name="documents-outline"></ion-icon>Active Projects</button>
+                <button><ion-icon name="alert-outline"></ion-icon>Urgent Projects</button>
+                <button><ion-icon name="documents-outline"></ion-icon>All Porjects</button>
+                <button><ion-icon name="chatbubbles-outline"></ion-icon>Messages</button>
+                <div class="profile">
+                    <a href="./landing.html" id="logout">Logout</a>
+                    <img src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="adminDisplay">
+            <div class="adminTop">
+                <h2>Dashboard</h2>
+                <button id="newProject">New Project</button>
+            </div>
+            <hr>
+            <div class="adminContent">
+                <h3>Projects</h3>
+            </div>
+        </div>
+
+    </div>
+    <script src="../dist/admin-dashboard.js"></script>
+</body>
+</html>

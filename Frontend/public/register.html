@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="registerContainer">
+        <div class="newUser">
+            <div class="top">
+                <div class="logo">PMS Projects</div>
+                <div class="navLogin">
+                    <a href="./landing.html">Already have an account?<span id="loginLink">Login</span></a>
+                </div>
+            </div>
+            <div class="bottom">
+                <h2>Let's get started by <br>creating your free <br> PMS account</h2>
+                <p class="success-msg"></p>
+                <form class="signUp" id="Sign-Up">
+                    <p id="email-error"></p>
+                    <div class="fName">
+                        <label for="userName">UserName</label>
+                        <br>
+                        <input type="text" name="userName" id="userName" placeholder="Enter Your Username">
+                        <br>
+                    </div> 
+                    <div class="emailDiv">
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="Email address">
+                    </div>
+                    <div class="pd">
+                        <label for="pwd">Password</label>
+                        <br>
+                        <input type="password" name="Password" id="password" placeholder="Password">
+                        <br>
+                    </div> 
+                    <div class="createUserDiv">
+                        <p id="terms">By signing up, I agree to the Terms of Use and Privacy Policy</p>
+                        <input type="submit" value="Register" id="submit">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../dist/register.js"></script>
+</body>
+</html>
