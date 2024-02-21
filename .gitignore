@@ -1,9 +1,8 @@
-/dist
-/admin-dashboard.html
-/user-dashboard.html
-/users.html
-/projects.html
-/tsconfig.json
-
-
+/Frontend/dist
+/backend/.env
+/backend/node_modules
+/backend/dist
+/bgservices/dist
+/bgservices/.env
+/bgservices/node_modules
 

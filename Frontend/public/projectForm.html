@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="newProjectContainer">
+        <div class="newProject">
+            <p class="success-msg"></p>
+            <div class="navAdmin">
+                <a href="./admin-dashboard.html"><ion-icon name="arrow-back-circle-outline" id = "adminBackArrow"></ion-icon></a>
+                <h2>Tell us about your project</h2>
+            </div>
+            <form class="createProject" id="createProject">
+                    <label for="title">Add a project title:</label>
+                    <br>
+                    <input type="text" name="title" id="title" placeholder="Project Title" required>
+                    <br>
+                    <label for="description">What is the project about?</label>
+                    <br>
+                    <textarea name="descr" id="descr" cols="30" rows="3" placeholder="Describe your project" required></textarea>  
+                    <br>                  
+                    <label for="end">Add a due date:</label>    
+                    <br>
+                    <input type="date" id="end_date" name="endDate" value="2020-01-01" max="2029-12-31" required/>
+                    <br>
+                    <label for="user_assigned" >Assign a user:</label>
+                    <br>
+                    <select id="user_assigned" name="user_assigned" required></select>
+                    <br>
+                    <input type="submit" value="Next" id="create">
+            </form>
+        </div>
+    </div>
+
+    <div class="output">
+
+    </div>
+
+    <script src="../dist/projectForm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
